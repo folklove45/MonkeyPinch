@@ -14,6 +14,7 @@
 		A304EBE51CB44AD3008C17E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A304EBE31CB44AD3008C17E3 /* LaunchScreen.storyboard */; };
 		A304EBF01CB44AD3008C17E3 /* MonkeyPinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EBEF1CB44AD3008C17E3 /* MonkeyPinchTests.swift */; };
 		A304EBFB1CB44AD3008C17E3 /* MonkeyPinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EBFA1CB44AD3008C17E3 /* MonkeyPinchUITests.swift */; };
+		A304EC091CB44B4B008C17E3 /* MonkeyPinchResources in Resources */ = {isa = PBXBuildFile; fileRef = A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A304EBF61CB44AD3008C17E3 /* MonkeyPinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonkeyPinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A304EBFA1CB44AD3008C17E3 /* MonkeyPinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyPinchUITests.swift; sourceTree = "<group>"; };
 		A304EBFC1CB44AD3008C17E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonkeyPinchResources; path = ../../MonkeyPinchResources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A304EBE11CB44AD3008C17E3 /* Assets.xcassets */,
 				A304EBE31CB44AD3008C17E3 /* LaunchScreen.storyboard */,
 				A304EBE61CB44AD3008C17E3 /* Info.plist */,
+				A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */,
 			);
 			path = MonkeyPinch;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A304EC091CB44B4B008C17E3 /* MonkeyPinchResources in Resources */,
 				A304EBE51CB44AD3008C17E3 /* LaunchScreen.storyboard in Resources */,
 				A304EBE21CB44AD3008C17E3 /* Assets.xcassets in Resources */,
 				A304EBE01CB44AD3008C17E3 /* Main.storyboard in Resources */,
@@ -403,6 +407,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kitsana.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kitsana.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
