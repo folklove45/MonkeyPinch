@@ -15,6 +15,7 @@
 		A304EBF01CB44AD3008C17E3 /* MonkeyPinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EBEF1CB44AD3008C17E3 /* MonkeyPinchTests.swift */; };
 		A304EBFB1CB44AD3008C17E3 /* MonkeyPinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EBFA1CB44AD3008C17E3 /* MonkeyPinchUITests.swift */; };
 		A304EC091CB44B4B008C17E3 /* MonkeyPinchResources in Resources */ = {isa = PBXBuildFile; fileRef = A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */; };
+		A304EC0B1CB45D40008C17E3 /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304EC0A1CB45D40008C17E3 /* TickleGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		A304EBFA1CB44AD3008C17E3 /* MonkeyPinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyPinchUITests.swift; sourceTree = "<group>"; };
 		A304EBFC1CB44AD3008C17E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonkeyPinchResources; path = ../../MonkeyPinchResources; sourceTree = "<group>"; };
+		A304EC0A1CB45D40008C17E3 /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		A304EC0C1CB45DC0008C17E3 /* MonkeyPinch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonkeyPinch-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,12 @@
 			children = (
 				A304EBDA1CB44AD2008C17E3 /* AppDelegate.swift */,
 				A304EBDC1CB44AD2008C17E3 /* ViewController.swift */,
+				A304EC0A1CB45D40008C17E3 /* TickleGestureRecognizer.swift */,
 				A304EBDE1CB44AD3008C17E3 /* Main.storyboard */,
 				A304EBE11CB44AD3008C17E3 /* Assets.xcassets */,
 				A304EBE31CB44AD3008C17E3 /* LaunchScreen.storyboard */,
 				A304EBE61CB44AD3008C17E3 /* Info.plist */,
+				A304EC0C1CB45DC0008C17E3 /* MonkeyPinch-Bridging-Header.h */,
 				A304EC081CB44B4B008C17E3 /* MonkeyPinchResources */,
 			);
 			path = MonkeyPinch;
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A304EBDD1CB44AD2008C17E3 /* ViewController.swift in Sources */,
+				A304EC0B1CB45D40008C17E3 /* TickleGestureRecognizer.swift in Sources */,
 				A304EBDB1CB44AD2008C17E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,11 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kitsana.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -415,11 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kitsana.MonkeyPinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

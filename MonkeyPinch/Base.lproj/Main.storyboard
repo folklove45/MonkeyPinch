@@ -19,23 +19,61 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="zom-PU-zqT">
                                 <rect key="frame" x="109" y="275" width="191" height="164"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ub6-iG-UFb" appends="YES" id="7FW-Rc-6MC"/>
+                                    <outletCollection property="gestureRecognizers" destination="wza-dp-wAw" appends="YES" id="TSk-RP-pck"/>
+                                    <outletCollection property="gestureRecognizers" destination="Cxk-fP-1dd" appends="YES" id="JkJ-VC-JFq"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey.png" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-el-7jY">
-                                <rect key="frame" x="20" y="170" width="167" height="186"/>
+                                <rect key="frame" x="20" y="162" width="167" height="186"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="MNb-ov-7RK" appends="YES" id="cvi-TZ-krp"/>
+                                    <outletCollection property="gestureRecognizers" destination="rED-r1-7c2" appends="YES" id="Apm-Oz-TfM"/>
+                                    <outletCollection property="gestureRecognizers" destination="hJW-kz-xEX" appends="YES" id="jBJ-b5-1Fr"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bananaPan" destination="ub6-iG-UFb" id="zjx-S6-cS8"/>
+                        <outlet property="monkeyPan" destination="MNb-ov-7RK" id="eTg-Fi-4Fz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="MNb-ov-7RK">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="bez-HL-Rax"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="6dL-u3-Ruu"/>
                     </connections>
                 </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ub6-iG-UFb">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="sgz-Tf-5jq"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="huy-xm-dMC"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="rED-r1-7c2">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="Ipe-Hy-fVu"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="wza-dp-wAw">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="4TS-we-OmI"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="hJW-kz-xEX">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="stx-Ec-ade"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="Cxk-fP-1dd">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="G2c-Fu-qbU"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162" y="377"/>
         </scene>
